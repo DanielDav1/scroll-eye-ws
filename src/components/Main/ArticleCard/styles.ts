@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const CardContainer = styled.div`
   overflow: hidden;
+  border-radius: 10px;
   border: 1px solid var(--border);
   cursor: pointer;
   transition: all 0.3s;
@@ -54,7 +55,7 @@ export const CategoryBadge = styled.span`
   transition: background 0.2s;
 
   ${CardContainer}:hover & {
-    background: rgba(255, 0, 0, 0.8); /* ou outra cor de hover */
+    background: rgba(255, 0, 0, 0.8); 
   }
 `;
 

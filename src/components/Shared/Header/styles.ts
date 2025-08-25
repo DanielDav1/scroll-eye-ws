@@ -20,12 +20,15 @@ export const Wrapper = styled.div`
 export const Inner = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 `;
 
 export const Logo = styled.div`
   display: flex;
   align-items: center;
-  transform: translateX(3rem); // translate-x-12
 
   h1 {
     font-size: 1.875rem; // text-3xl
@@ -94,5 +97,5 @@ export const MobileNav = styled.div`
 export const Actions = styled.div`
   display: flex;
   align-items: center;
-  margin-left: 2rem;
+  margin-left: 5rem;
 `;
