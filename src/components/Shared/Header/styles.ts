@@ -11,10 +11,7 @@ export const Container = styled.header`
 
 export const Wrapper = styled.div`
   width: 100%;
-  padding: 1.25rem 1rem; // py-5 px-4
-  @media (min-width: 768px) {
-    padding: 1.25rem 1.5rem; // md:px-6
-  }
+  padding: 6px;
 `;
 
 export const Inner = styled.div`
@@ -22,7 +19,7 @@ export const Inner = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
 `;
 
@@ -31,10 +28,9 @@ export const Logo = styled.div`
   align-items: center;
 
   h1 {
-    font-size: 1.875rem; // text-3xl
+    font-size: 1.9rem;
     font-weight: bold;
     color: var(--accent);
-    letter-spacing: -0.015em;
     font-family: "Federant", sans-serif;
     font-style: italic;
   }
@@ -43,8 +39,8 @@ export const Logo = styled.div`
 export const Nav = styled.nav`
   display: none;
   flex: 1;
-  justify-content: center;
-  margin-left: 1.5rem;
+  justify-content: flex-start;
+  margin-left: 84px;
 
   @media (min-width: 1024px) {
     display: flex;
@@ -55,7 +51,7 @@ export const Nav = styled.nav`
 export const NavList = styled.div`
   display: flex;
   align-items: center;
-  gap: 2.5rem; // space-x-10
+  gap: 2.8rem;
 `;
 
 export const NavItem = styled.a`
@@ -91,6 +87,24 @@ export const MobileNav = styled.div`
 
   @media (min-width: 1024px) {
     display: none;
+  }
+`;
+
+export const AvatarButton = styled.button`
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: transparent;
+  color: var(--primary-foreground);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 40px;
+    height: 40px;
   }
 `;
 

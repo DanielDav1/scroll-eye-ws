@@ -1,7 +1,6 @@
 import React from 'react';
-import { Button } from '../../UI/button';
-import { Menu } from 'lucide-react';
 import * as S from './styles';
+import { User } from "lucide-react";
 
 export const Header: React.FC = () => {
   return (
@@ -24,22 +23,11 @@ export const Header: React.FC = () => {
               <S.NavItem href="#">Geral</S.NavItem>
             </S.NavList>
           </S.Nav>
-          {/* Mobile Navigation */}
-          <S.MobileNav>
-            <Button
-              variant="outline"
-              size="icon"
-              className="border-accent/20 text-accent hover:bg-accent hover:text-accent-foreground"
-            >
-              <Menu className="h-5 w-5" />
-            </Button>
-          </S.MobileNav>
-
           {/* Actions - Right */}
           <S.Actions>
-            <Button variant="default" className="bg-accent hover:bg-accent/90">
-              Login
-            </Button>
+            <S.AvatarButton>
+              <User />
+            </S.AvatarButton>
           </S.Actions>
         </S.Inner>
       </S.Wrapper>
